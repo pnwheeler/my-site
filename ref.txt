@@ -1,0 +1,16 @@
+--------REFERENCES----------------------------------------------------------
+Border Animation:
+	https://css-tricks.com/animating-border/
+Getting Class Elements:
+	https://bobbyhadz.com/blog/javascript-add-event-listener-to-all-elements-with-class
+CSS Grid:
+	https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-template-columns-rows
+Overlay:
+	https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_overlay_text
+Block Links:
+	https://adrianroselli.com/2020/02/block-links-cards-clickable-regions-etc.html
+Images:
+	https://stackoverflow.com/questions/60323199/how-to-set-min-width-to-image-in-fixed-container
+	(???)https://blog.hubspot.com/website/insert-image-in-html
+Text-effect:
+	https://codepen.io/supah/pen/NWqGapO

@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>My site</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bokor&family=Cutive+Mono&family=Libre+Barcode+128+Text&display=swap');
+        </style>
+    </head>
+    <body>
+        <div id="bg"></div>
+        <div id="main-grid">
+            <div class="subject-heading">ABOUT ME</div>
+            <div id="about">
+                <div id="portrait">
+                    <div id="circle"></div>
+                    <img src="media/gifs/new_gif.gif">
+                    <span id="name">patrick</span>
+                </div>
+                <div id="about-me">
+                    Hey. My name’s Patrick!<br>
+                    I graduated from UMBC with a BS in CS where I was introduced to image processing, games, and ML. 
+                    Basically, I've taken interest in anything visual and love learning about the methods behind them. 
+                    I'm actively seeking an internship or entry-level position in a role that encourages the exploration 
+                    of tech and art. Here are some things I’ve made! 
+                </div>
+                
+            </div>
+            <div class="subject-heading">PROJECTS</div>
+            <div class="project-card" id="proj1">
+                <span>stabilize</span>
+            </div>
+            <div class="project-card" id="proj2">
+                <span>renderering</span>
+            </div>
+            <div class="project-card" id="proj3">
+                <span>ue4</span>
+            </div>
+            <div class="project-card" id="proj4">
+                <span>pixel sort</span>
+            </div>
+            <div class="project-card" id="proj5">
+                <span>seam carve</span>
+            </div>
+            <div class="project-card" id="proj6">
+                <span>blender</span>
+            </div>
+        </div>
+        <div class="modal" id="proj1-modal">
+            <button class="close" onclick="off(this.parentNode)">&#10006</button>
+            <div class="media-container">
+                <img src="media/gifs/original.gif" ><img src="media/gifs/stable.gif" >
+            </div>
+            <div class="description">
+                <span class="heading">Image sequence stabilizer</span>
+                <br><br>
+                Detects feature points across the set of images and compensates for shake by applying rotational 
+                and perspective transformations with respect to a ground image. 
+                <br><br>
+                <span class="stack"> Python, OpenCV </span>
+            </div>
+        </div>
+        <div class="modal" id="proj2-modal" onclick="off(this)">
+            <button class="close" onclick="off(this.parentNode)">&#10006</button>
+            <div class="media-container">
+                <img src="media/pics/teapot_ray.png"><img src="media/pics/teapot.png">
+            </div>
+            <div class="description">
+                <span class="heading">Ray tracer and rasterizer</span>
+                <br><br>
+                Intro to computer graphics course assignments. Renders NFF scene descriptions to ppm image. 
+                Used the crossing algorithm to allow for ray-object intersection on general polygons. <br>
+                <span style="text-align: left;">
+                    <span class="stack">Ray-tracer: </span>Diffuse, specular, and directional lighting<br>
+                    <span class="stack">Rasterizer: </span>Fragment shading   
+                </span>    
+                <br><br>
+                <span class="stack"> C++, Eigen.h </span>
+            </div>
+        </div>
+        <div class="modal" id="proj3-modal" onclick="off(this)">
+            <button class="close" onclick="off(this.parentNode)">&#10006</button>
+            <div class="media-container">
+                <img src="media/gifs/ue4_flocking.gif">
+            </div>
+            <div class="description">
+                <span class="heading">Flocking in UE4</span>
+                <br><br>
+                An assignment for a graphics-for-games course. Extended functionality of UE4's Pawn actor class. 
+                Parameters control avoidance, directional alignment, and cohesion to simulate organic-looking 
+                interactions as described by the boid behavioral model.
+                <br><br>
+                <span class="stack">UE4, C++</span>
+            </div>
+        </div>
+        <div class="modal" id="proj4-modal" onclick="off(this)">
+            <button class="close" onclick="off(this.parentNode)">&#10006</button>
+            <div class="media-container">
+                <img src="media/pics/moss_v.png">
+            </div>
+            <div class="description">
+                <span class="heading">Post-process sorting effect</span>
+                <br><br>
+                Sorts pixels by perceived luminosity within row or column-based segments 
+                defined by user-provided thresholds. 
+                <br><br>
+                <span class="stack">C++, CImg.h, ImageMagick</span>
+            </div>
+        </div>
+        <div class="modal" id="proj5-modal" onclick="off(this)">
+            <button class="close" onclick="off(this.parentNode)">&#10006</button>
+            <div class="media-container">
+                <img src="media/gifs/nightcity.gif" style="width: 100%;">
+            </div>
+            <div class="description">
+                <span class="heading"> Content-aware image resizing</span>
+                <br><br>
+                Cropping alternative that aims to retain features:
+                Uses dynamic programming to calculate a cumulative energy map across an image.
+                Filtered with the LoG operator to augment edge detection.
+                Optional mask protects a region from distortion.</span>
+                <br><br>
+                <span class="stack"> C++, CImg.h </span>
+            </div>
+        </div>
+        <div class="modal" id="proj6-modal" onclick="off(this)">
+            <button class="close" onclick="off(this.parentNode)">&#10006</button>
+            <div class="media-container">
+                <img src="media/gifs/donut_cropped.gif">
+            </div>
+            <div class="description">
+                <span class="heading">Blender fundamentals</span>
+                <br><br>
+                Modeled, textured, and added materials to the donut. 
+                Created geometry nodes to dynamically distribute sprinkles. 
+                Animated the composition, and rendered out the scene. 
+                <br><br>
+                <span class="stack">Blender</span>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
